@@ -196,12 +196,3 @@ GET /123456/list?measure_type=WATER HTTP/1.1
     "error_description": "Nenhuma leitura encontrada."
   }
   ```
-
-
-## Testes
-
-Para rodar os testes, utilize o comando:
-
-    ```bash
-    npm test
-    ```
