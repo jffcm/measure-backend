@@ -1,0 +1,24 @@
+services:
+  app:
+    build: .
+    container_name: measure_backend
+    ports:
+      - "3000:3000"
+    environment:
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
+    volumes:
+      - .:/usr/src/app
+    depends_on:
+      - db
+    command: npm start
+
+  db:
+    image: nouchka/sqlite3:latest
+    container_name: sqlite_db
+    volumes:
+      - ./data:/data
+    environment:
+      - SQLITE_DATABASE_PATH=/data/database.db
+
+volumes:
+  data:
