@@ -2,10 +2,12 @@
 
 Este projeto é um serviço de backend desenvolvido em Node.js com TypeScript para gerenciar leituras individualizadas de consumo de água e gás. A aplicação utiliza SQLite como banco de dados e oferece endpoints para upload de imagens, confirmação de leituras e listagem de medições. Além disso, o serviço integra com a API Gemini para processar imagens e obter as medições.
 
+
 ## Requisitos
 
 - **Node.js**
 - **Docker e Docker Compose instalados na sua máquina** 
+
 
 ## Instalação
 
@@ -16,11 +18,13 @@ Este projeto é um serviço de backend desenvolvido em Node.js com TypeScript pa
     cd measure-backend
     ```
 
+
 2. **Instale as dependências:**
 
     ```bash
     npm install
     ```
+
 
 3. **Configuração do ambiente:**
 
@@ -32,11 +36,13 @@ Este projeto é um serviço de backend desenvolvido em Node.js com TypeScript pa
 
    - `GEMINI_API_KEY`: Chave da API Gemini usada para processar imagens e obter medições.
 
+
 4. **Suba a aplicação usando Docker Compose:**
 
     ```bash
     docker-compose up
     ```
+
 
 ## Endpoints Disponíveis
 
