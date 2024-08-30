@@ -16,9 +16,10 @@ services:
     image: nouchka/sqlite3:latest
     container_name: sqlite_db
     volumes:
-      - ./data:/data
+      - sqlite-data:/data
     environment:
       - SQLITE_DATABASE_PATH=/data/database.db
+    restart: always
 
 volumes:
-  data:
+  sqlite-data:
